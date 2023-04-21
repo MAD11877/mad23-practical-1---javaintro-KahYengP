@@ -27,6 +27,31 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    int num = in.nextInt();
+
+    int numList[] = new int[num];
+
+    for(int i = 0; i < num; i++){
+      numList[i] = in.nextInt();
+    }
+
+    int count = 0;
+    int indivCount = -1;
+    Integer highestNum = null; 
     
+    for(int i: numList){
+      for(int j: numList){
+        if(i == j){
+          indivCount++;
+        }
+       }
+      if(indivCount > count){
+          count = indivCount;
+          highestNum = i;
+        
+      }
+    }
+    System.out.println(highestNum);
+  
   }
 }
