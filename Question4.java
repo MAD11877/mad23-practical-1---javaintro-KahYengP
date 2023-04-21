@@ -17,8 +17,7 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-      Scanner in = new Scanner(System.in);
-    System.out.println("ln: ");
+     Scanner in = new Scanner(System.in);
     int line = in.nextInt();      
     for (int i= line-1; i>=0 ; i--)  
     {    
